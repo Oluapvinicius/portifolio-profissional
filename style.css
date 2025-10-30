@@ -3,37 +3,115 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     height: 100vh;
-}
-header{
-    background-color: rgb(170, 170, 170);
+    background: linear-gradient(135deg, #ffc8be, #b2eae8);
     
     
-}
-.box-header{
-    display: flex;
-    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.box-header ul{
+.box-header ul li a {
+    text-decoration: none;
+    color: #333;
+    
+    font-weight: 500; 
+}
+header {
+
+    width: 100%;
+    padding: 20px 5%; 
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.box-header {
+    display: flex;
+    
+
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.box-header ul {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 25px; 
     align-items: center;
-    justify-content: right;
-    height: 60px;
-    width: 900px;
-    color: inherit;      
-    font-size: 20px;
+    
+
+    
+    font-size: 18px; 
 }
 .box-header ul li a {
-    text-decoration: none;  
-    color: #333;           
-  }
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    
+    
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.box-header ul li a:hover {
+    color: #ff4c45; 
+}
+
+
+.box-header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff4c45;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.box-header ul li a:hover::after {
+    width: 100%;
+}
 
 .image-header{
     display: flex;
     width: 90px;
     height: 60px;
+}
+
+main{
+    width: 100vw;
+    height: 500px;
+    justify-content: center;
+
+}
+
+.box-main {
+    display: flex;
+    height: 500px;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.box-main h1 {
+    font-size: 60px; 
+    font-weight: 700; 
+    color: #222; 
+    margin-bottom: 10px; 
+}
+
+
+.box-main h2 {
+    background-image: linear-gradient(to right, rgb(255, 76, 69), rgb(75, 75, 254));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px; 
+    font-weight: 500;
 }
