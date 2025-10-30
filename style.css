@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: rgb(170, 170, 170);
+    
+    
+}
+.box-header{
+    display: flex;
+    justify-content: center;
+}
+
+.box-header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: right;
+    height: 60px;
+    width: 900px;
+    color: inherit;      
+    font-size: 20px;
+}
+.box-header ul li a {
+    text-decoration: none;  
+    color: #333;           
+  }
+
+.image-header{
+    display: flex;
+    width: 90px;
+    height: 60px;
+}
